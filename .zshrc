@@ -40,3 +40,4 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 #alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias mkvenv='python -m venv venv && cd .. && cd -'
 alias config='git --git-dir=/home/neil/.dotfiles/ --work-tree=/home/neil'
+alias lla='command ls -a --color=auto -v'
