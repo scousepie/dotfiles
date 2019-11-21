@@ -71,6 +71,10 @@ set expandtab
 set background=dark
 colorscheme solarized
 
+"turn off annoying bell
+set visualbell
+set t_vb=
+
 filetype plugin indent on
 syntax on
 
