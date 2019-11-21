@@ -19,7 +19,7 @@ function virtual_env_prompt () {
 	REPLY=${VIRTUAL_ENV+[${VIRTUAL_ENV:t}]}
 }
 
-grml_theme_add_token virtual-env -f virtual_env_prompt '%F{001}' '%f'
+grml_theme_add_token virtual-env -f virtual_env_prompt '%F{007}' '%f'
 
 zstyle ':prompt:grml:left:items:host' pre '%B%F{070}'
 zstyle ':prompt:grml:left:items:path' pre '%B%F{240}'
