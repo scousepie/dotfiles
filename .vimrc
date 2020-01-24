@@ -69,6 +69,8 @@ set shiftwidth=4
 let &softtabstop = &shiftwidth
 set expandtab
 set background=dark
+set foldmethod=indent
+set foldignore=
 colorscheme solarized
 
 "turn off annoying bell
@@ -141,6 +143,9 @@ nnoremap <leader>z C-W>z
 
 " command for quick directory change
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" Close the preveiw window after completion is done
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
 
 "}}}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
