@@ -290,12 +290,12 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>chromium</command>
+        <command>google-chrome-stable</command>
       </action>
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>gnome-terminal</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="W-f">
