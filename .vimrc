@@ -51,6 +51,8 @@ Plug 'altercation/vim-colors-solarized'
 
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
+Plug 'mattn/emmet-vim'
+Plug 'Glench/Vim-Jinja2-Syntax'
 "Plug 'plytophogy/vim-virtualenv'
 "Plug 'christoomey/vim-tmux-Navigator'
 " List ends here. Plugins become visible to vim after this call.
@@ -69,7 +71,7 @@ set shiftwidth=4
 let &softtabstop = &shiftwidth
 set expandtab
 set background=dark
-set foldmethod=indent
+"set foldmethod=indent
 set foldignore=
 colorscheme solarized
 
@@ -125,6 +127,8 @@ imap <C-W> <C-O><C-W>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "{{{ ==> Shortcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" to open netrw window ( :E clashes with emmet plugin )  
+nmap <leader>e :Explore<CR>
 
 " fast saving
 nmap <leader>w :w<CR>
