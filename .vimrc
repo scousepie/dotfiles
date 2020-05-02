@@ -51,6 +51,8 @@ Plug 'altercation/vim-colors-solarized'
 
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
 "Plug 'plytophogy/vim-virtualenv'
@@ -83,6 +85,19 @@ filetype plugin indent on
 syntax on
 
 autocmd FileType vim,txt setlocal foldmethod=marker
+
+"tab spacing for html, css and js
+"au BufNewFile,BufRead *.js,*.html,*.css
+"    \ setlocal tabstop=2
+"    \ setlocal softtabstop=2
+"    \ setlocal shiftwidth=2
+
+"-- EMMET CONFIG --
+"redefine trigfer key
+let g:user_emmet_leader_key=','
+
+"-- AUTOCOMPLETION CSS --
+set omnifunc=syntaxcomplete#Complete
 
 "}}}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
